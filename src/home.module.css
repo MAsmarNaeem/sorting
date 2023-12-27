@@ -1,0 +1,59 @@
+
+.parent {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebarParent {
+    width: 25%;
+  }
+  .formParent {
+    width: 75%;
+  }
+  
+  .addBtn:hover {
+    background-color: #0056b3;
+  }
+  .addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    height: 35px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .btnParent {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  @media (max-width: 775px) {
+    .sidebarParent {
+      width: 35%;
+    }
+    .formParent {
+      width: 65%;
+    }
+  }
+  
+      @media (max-width: 550px) {
+        .sidebarParent {
+          width: 100%;
+        }
+        .parent {
+          flex-direction: column;
+        }
+        .formParent {
+          width: 100%;
+        }
+      }
